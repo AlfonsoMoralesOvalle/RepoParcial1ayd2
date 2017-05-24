@@ -1,0 +1,60 @@
+
+<html>
+    <head>
+        <title>Parcial 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel=stylesheet href="./img/estilos.css" type="text/css">
+        
+<script type="text/javascript">
+    function CargarPagina(pagina) {
+        if(pagina =="1"){
+            document.getElementById("C").src ="inicio.html";
+        }
+        if(pagina =="2"){
+            document.getElementById("C").src ="nosotros.html";
+        }
+        if(pagina =="3"){
+            document.getElementById("C").src ="productos.html";
+        }
+                if(pagina =="4"){
+            document.getElementById("C").src ="servicios.html";
+        }
+        if(pagina =="5"){
+            document.getElementById("C").src ="contacto.html";
+        }        
+        if(pagina =="6"){
+            document.getElementById("C").src ="personal.html";
+        }          
+    
+    }
+  
+</script>      
+<style>
+    body{
+        background-color: white; 
+    }
+</style>
+    </head>
+
+    <body> 
+    <center>
+        <div class="div_menu">
+        <ul>
+          <li><a href="javascript:CargarPagina(1);">Inicio</a></li>
+          <li><a href="javascript:CargarPagina(2);">Nosotros</a></li>
+          <li><a href="javascript:CargarPagina(3);">Productos</a></li>
+          <li><a href="javascript:CargarPagina(4);">Servicios</a></li>
+          <li> <a href="javascript:CargarPagina(5);">Contactanos</a></li>
+          <li> <a href="javascript:CargarPagina(6);">Personal</a></li>
+        </ul>  
+    
+        </div><br>        
+    </center>
+    <center>
+    <iframe id="C" src="inicio.html" class="contenedor">
+
+    </iframe>          
+    </center>
+    </body>
+</html>
